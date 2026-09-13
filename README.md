@@ -26,7 +26,7 @@ The simulation relies on three interconnected physics modules:
 **Data Visualization**
 ![A320 Fuel Burn Profile](lhr_bom_mission_chart.png)
 
-The solver outputs professional multi-axis engineering charts, proving the efficiency gains of specific mission profiles and demonstrating macro-level flight physics integration[span_5](start_span)[span_5](end_span).
+The solver outputs professional multi-axis engineering charts, proving the efficiency gains of specific mission profiles and demonstrating macro-level flight physics integration.
 
 **Usage**
 Ensure `atmosphere_model.py`, `aerodynamics.py`, and `propulsion.py` are located in the same directory before executing the main mission loop script.
