@@ -23,6 +23,14 @@ The simulation relies on three interconnected physics modules:
 3. **Breguet Range Validation:** The 60-second discrete numerical integration is validated against the theoretical Breguet Range Equation to ensure mathematical accuracy:
    $$R = \frac{V}{g \cdot \text{TSFC}} \frac{L}{D} \ln\left(\frac{W_{\text{start}}}{W_{\text{end}}}\right)$$
 
+**Operational Constraints & System Logic**
+* **Atmospheric Extremes:** The physics model moves beyond standard ISA conditions by incorporating variable temperature offsets (e.g., ISA + 15°C). This allows for realistic analysis of hot-and-high departure limits where reduced air density severely restricts Maximum Takeoff Weight (MTOW)
+  
+* **Dynamic Step-Climb Profiling:** To accurately mirror real-world commercial flight operations, the solver utilizes step-climb logic. As fuel mass is burned off, the numerical loop dynamically transitions the aircraft to higher cruise altitudes in 2,000-foot increments to optimize the Thrust Specific Fuel Consumption (TSFC)
+  
+* **Modular Code Architecture:** The solver avoids monolithic scripting by separating the environment (`atmosphere_model.py`), aerodynamic polar calculations (`aerodynamics.py`), and fuel flow (`propulsion.py`) into distinct modules. This ensures the underlying logic remains scalable and production-ready for testing conceptual airframes against the commercial Airbus A320 baseline.
+
+
 **Data Visualization**
 ![A320 Fuel Burn Profile](lhr_bom_mission_chart.png)
 
