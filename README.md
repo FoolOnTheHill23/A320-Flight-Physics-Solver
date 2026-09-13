@@ -3,12 +3,12 @@
 **Airbus A320 Performance & Mission Profile Solver**
 
 **Overview**
-This project is a discrete time-step numerical solver that simulates the dynamic flight physics of an Airbus A320 flying a great-circle route from London Heathrow (LHR) to Mumbai (BOM). The script calculates range, endurance, and fuel burn based on varying payloads and atmospheric conditions[span_1](start_span)[span_1](end_span).
+This project is a discrete time-step numerical solver that simulates the dynamic flight physics of an Airbus A320 flying a great-circle route from London Heathrow (LHR) to Mumbai (BOM). The script calculates range, endurance, and fuel burn based on varying payloads and atmospheric conditions
 
 **Core Project Objectives**
-* Synthesize aerodynamics, propulsion, and atmospheric physics into a functioning computational model[span_2](start_span)[span_2](end_span).
-* Discretize physical equations into numerical solvers to prove scalable, production-grade code architecture[span_3](start_span)[span_3](end_span).
-* Generate professional engineering charts to communicate complex performance limits[span_4](start_span)[span_4](end_span).
+* Synthesize aerodynamics, propulsion, and atmospheric physics into a functioning computational model
+* Discretize physical equations into numerical solvers to prove scalable, production-grade code architecture
+* Generate professional engineering charts to communicate complex performance limits
 
 **Mathematical Baseline & Governing Equations**
 The simulation relies on three interconnected physics modules:
