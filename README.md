@@ -24,7 +24,7 @@ The simulation relies on three interconnected physics modules:
    $$R = \frac{V}{g \cdot \text{TSFC}} \frac{L}{D} \ln\left(\frac{W_{\text{start}}}{W_{\text{end}}}\right)$$
 
 **Data Visualization**
-![A320 Fuel Burn Profile](a320_fuel_burn_profile.png)
+![A320 Fuel Burn Profile](lhr_bom_mission_chart.png)
 
 The solver outputs professional multi-axis engineering charts, proving the efficiency gains of specific mission profiles and demonstrating macro-level flight physics integration[span_5](start_span)[span_5](end_span).
 
